@@ -1,2 +1,2 @@
-let myAge = 26;
-console.log(myAge);
+let myAgee = 26;
+console.log(myAgee);
