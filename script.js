@@ -1,4 +1,4 @@
-let title = "Калькулятор верстки";
+const title = "Калькулятор верстки";
 let screens = "Простые, Сложные, Интерактивные";
 let screenPrice = 5;
 let rollback = 10;
@@ -10,21 +10,9 @@ console.log(typeof fullPrice);
 console.log(typeof adaptive);
 console.log(screens.length);
 console.log(
-  "Стоимость верстки экранов" +
-    " " +
-    screenPrice +
-    " " +
-    "рублей" +
-    " " +
-    "и" +
-    " " +
-    "Стоимость разработки сайта" +
-    " " +
-    fullPrice +
-    " " +
-    "рублей"
+  `Стоимость верстки экранов${screenPrice}рублейи Стоимость разработки сайта${fullPrice}рублей`
 );
 screens = screens.toLowerCase();
-let mass = screens.split(" ");
-console.log(mass);
+screens = screens.split(",");
+console.log(screens);
 console.log(fullPrice * (rollback / 100));
